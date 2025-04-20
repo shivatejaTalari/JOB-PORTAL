@@ -28,7 +28,7 @@ const Home = () => {
       <Header />
       <Categories />
       {loading && <p>Loading jobs...</p>}
-      {error && <p>Error: {error}</p>}
+      
       {!loading && !error && <LatestJobs jobs={jobs} />}
       <Footer />
     </div>
